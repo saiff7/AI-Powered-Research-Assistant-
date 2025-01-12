@@ -12,7 +12,7 @@ import matplotlib
 matplotlib.use('Agg')  # Use non-interactive backend for matplotlib
 
 # Set your API key here. You can get it from https://ai.google.dev/gemini-api/docs/api-key
-genai.configure(api_key="AIzaSyBKEq4ijo__syj0KLHHrxgoJ6nubG25cUg") 
+genai.configure(api_key="****") 
 
 # Verbosity level (0 = only final assistant messages, 1 = function calls, 2 = function calls and their results)
 VERBOSITY = 2
@@ -46,7 +46,7 @@ def find_papers(topic: str) -> dict:
         A dictionary containing a list of research papers with their titles and abstracts.
     """
     try:
-        url = f"http://export.arxiv.org/api/query?search_query=all:{topic}&start=0&max_results=5"
+        url = f"****"
         response = requests.get(url)
 
         if response.status_code == 200:
